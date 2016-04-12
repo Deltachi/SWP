@@ -1,0 +1,64 @@
+.soliloquy-container{
+	margin:auto!important;
+}
+.soliloquy-item .soliloquy-caption{
+	background: rgba(250,250,250,0.7) !important;
+	bottom: 40px !important;
+	border-radius: 20px !important;
+	left: 60px !important;
+	padding: 30px !important;
+	position: absolute !important;
+	text-align: center !important;	
+	/*transform:translate(0%,50%) !important;*/
+	width: 400px !important;
+}
+.soliloquy-caption-inside h1, .soliloquy-caption-inside h2, .soliloquy-caption-inside h3{
+	color: rgb(50,50,50)!important;
+	font-size: 18pt!important;
+	font-weight: 500!important;
+	margin-bottom: 10px;
+}
+.soliloquy-caption-inside p{
+	color: rgb(50,50,50)!important;
+	font-size: 12pt!important;
+	font-weight: 500!important;
+}
+.soliloquy-caption-inside a{
+	background-color: #248749;
+	border-radius: 10px;
+	box-shadow: 1px 1px 5px rgba(50,50,50,0.25);
+	color: white;
+	font-size: 11pt;
+	font-weight: 700!important;
+	padding: 8px 12px;
+	position: relative;
+	top: 20px;
+	transition: all 0.2s ease;
+}
+.soliloquy-caption-inside a:hover{
+	text-decoration: none;
+}
+.soliloquy-caption-inside a:focus{
+	box-shadow: inset 0 0 5px 2px rgba(50,50,50,0.5);
+	outline: none;
+	text-decoration: none;
+}
+
+@media screen and (min-width: 768px){
+	.soliloquy-container{
+		width: 100%!important;
+		max-width: 100%!important;
+	}	
+}
+@media screen and (min-width: 992px){
+	.soliloquy-container{
+		width: 970px!important;
+		max-width: 970px!important;
+	}	
+}
+@media screen and (min-width: 1200px){
+	.soliloquy-container{
+		width: 1170px!important;
+		max-width: 1170px!important;
+	}
+}

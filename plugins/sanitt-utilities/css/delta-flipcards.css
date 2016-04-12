@@ -1,0 +1,75 @@
+.widget_wp_flipcards_widget{
+	padding: 20px;
+}
+.flipcard-row{
+	margin-bottom: -20px;
+}
+
+/*'Leistungen' cards + animation*/
+.cards{
+	background: no-repeat url("/images/backgrounds/Banner_3000x3000.jpg");
+	background-size: 100%;
+	box-shadow: inset 0 0 5px rgba(80,80,80,0.3);
+	min-height: 600px;
+	padding: 50px 0px 50px 0;
+}
+.card{
+	height: 176px;
+	margin: 20px auto;
+	min-width: 263px;
+	perspective: 500px;
+	perspective-origin: 50% 50%;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+}
+.card:hover>.front{
+	transform: rotateY(180deg);
+}
+ .card:hover>.back{
+	transform: rotateY(0deg);
+ }
+.card>.front, .card>.back{
+	backface-visibility: hidden;
+	background-color: #248749;
+	border-radius: 25px;
+	height: 176px;
+	left: calc((100% - 263px)/2); /*Verschiebe die Karten in die Mitte der Column*/
+	position: absolute;
+	text-align: center;
+	transform: rotateY(0);
+	transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+	width: 263px;
+}
+.card>.front>h3{
+	bottom: 30px;
+	color: white;
+	font-size: 145%;
+	left: 50%;
+	position: absolute;
+	transform: translateX(-50%) translateY(50%);
+	width: 90%;
+}
+.card>.front>.icon{
+	left: 50%;
+	position: absolute;
+	transform: translateX(-50%);
+	top: 10px;
+	width: 100px;
+}
+.card>.front>h3.small{
+	font-size: 140%;
+}
+.card>.back{
+	background-color: #BFBFBF;
+	color: rgb(30,30,30);
+	transform: rotateY(-180deg);
+}
+.card>.back>p{
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width: 80%;
+}

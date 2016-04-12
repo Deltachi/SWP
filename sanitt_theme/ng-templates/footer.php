@@ -1,0 +1,68 @@
+<div class="pre-footer">
+				<div class="container">
+					<div class="col-md-5">
+						<p class="text">Besuchen Sie uns in folgenden sozialen Netzwerken:</p>
+					</div>
+					<div class="col-md-7">
+						<a class="banner" href="https://www.facebook.com/Sanitt-162282240792281/" target="_blank" style="background-color: #3B5994;left: 10px">
+							<img ng-src="{{wp_templateUrl}}/images/icons/facebook.svg" alt="facebook-icon">
+							<p>Folgen Sie uns auf <br> <strong>Facebook</strong></p>
+						</a>
+						<a class="banner" href="http://linkedin.com" target="_blank" style="background-color: #0080C3;left: 168px">
+							<img ng-src="{{wp_templateUrl}}/images/icons/linkedIn.svg" alt="linkedIn-icon">
+							<p>Folgen Sie uns auf <br> <strong>LinkedIn</strong></p>
+						</a>
+						<a class="banner" href="https://www.xing.com/companies/%5Bsan%5Ditt%5Binformationtechnologytrainings" target="_blank" style="background-color: #126567;left: 326px">
+							<img ng-src="{{wp_templateUrl}}/images/icons/xing.svg" alt="xing-icon">
+							<p>Folgen Sie uns auf <br> <strong>Xing</strong></p>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="main-footer">
+				<div class="container">
+					<!-- <div class="footer-column col-md-4 col-sm-12">
+						<h3>Leistungen</h3>
+						<p>[Placeholder]</p>
+					</div> -->
+					<div class="footer-column col-md-6 col-sm-6">
+						<h3>Schnellkontakt</h3>
+						<form action="">
+							<input type="text" name="name" placeholder="Name">
+							<div class="spacer"></div>
+							<input type="text" name="mail" placeholder="IhreMail@beispiel.de">
+							<div class="spacer"></div>
+							<textarea rows="3" name="message" placeholder="Ihre Nachricht..."></textarea>
+							<div class="spacer"></div>
+							<input type="submit" class="submit" value="ABSENDEN">
+						</form>
+					</div>
+					<div class="footer-column col-md-6 col-sm-6">
+						<h3>Kontakt</h3>
+						<table>
+							<tbody>
+								<tr>
+									<td>Dessauer Straße 10</td>
+								</tr>
+								<tr>
+									<td>33106 Paderborn</td>
+								</tr>
+								<tr>
+									<td>Tel.: 05251 / 54 32 86</td>
+								</tr>
+								<tr>
+									<td>Fax: 05251 / 54 32 85</td>
+								</tr>
+								<tr>
+									<td>E-Mail: info@sanitt.de</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="post-footer">
+				<p>Copyright © 2016 sanitt.de. Alle Rechte vorbehalten.</p>
+				<a href="#" target="_blank">Impressum</a> &nbsp;
+				<a href="#" target="_blank">Haftungsausschluss</a>
+			</div>
