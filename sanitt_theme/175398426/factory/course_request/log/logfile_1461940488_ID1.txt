@@ -1,0 +1,54 @@
+Register Time (Server): 29.04.2016 16:34:48
+-------------------------------------------
+course_data:
+>>>
+    topic: Adobe Encoder
+
+    contents: Video und Audioformate
+
+    date1: 30. 04. 2016
+
+    date2: 31. 05. 2016
+
+    material: true
+
+<<<
+
+course_members: 6
+
+course_type: private
+
+customer:
+>>>
+    gender: male
+
+    street:
+    >>>
+        name: Hier
+
+        number: 1
+
+    <<<
+
+    city:
+    >>>
+        plz: 12345
+
+        name: Da
+
+    <<<
+
+    firstname: Max
+
+    lastname: Mustermann
+
+    phone: 12345667
+
+    email: max.m@mann.de
+
+<<<
+
+zip: true
+
+admin_email: dominik.scheffler@me.com
+

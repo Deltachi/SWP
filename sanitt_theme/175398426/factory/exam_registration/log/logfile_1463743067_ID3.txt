@@ -1,0 +1,78 @@
+Register Time (Server): 20.05.2016 13:17:47
+-------------------------------------------
+exam_data:
+>>>
+    name: CAT Deutsch
+
+    requirements: true
+
+    super: Certified Agile Tester
+
+    date1: 24. Mai, 2016
+
+    time1: 16:30
+
+<<<
+
+exam_members:
+>>>
+    0:
+    >>>
+        gender: male
+
+        student: true
+
+        timebonus: false
+
+        $$hashKey: 008
+
+        firstname: Max
+
+        lastname: Mustermann
+
+        street:
+        >>>
+            name: Diesestrasse
+
+            number: 11
+
+        <<<
+
+        city:
+        >>>
+            plz: 12345
+
+            name: Dieserort
+
+        <<<
+
+        birthday: 1.11.1993
+
+        birthplace: Dieserort
+
+        phone: 1230123
+
+        email: m.muster@mann.de
+
+    <<<
+
+<<<
+
+exam_type: private
+
+customer:
+>>>
+    gender: female
+
+<<<
+
+alternative_billing: false
+
+zip: true
+
+admin_email:
+>>>
+    0: dominik.scheffler@me.com
+
+<<<
+

@@ -1,0 +1,207 @@
+.pre-footer{
+	background-color: #D7D7D7;
+	min-height: 120px;
+	position: relative;
+}
+.pre-footer>.container>div{
+	height: 120px;
+}
+.pre-footer .text{
+	font-size: 120%;
+	position: absolute;
+	right: 50px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+/*banner settings*/
+.pre-footer .banner{
+	color: white;
+	box-shadow: 3px 3px 8px rgba(80,80,80,0.5);
+	font-size: 90%;
+	height: 240px;
+	padding: 15px;
+	position: absolute;
+	text-align: center;
+	top: 20px;
+	transition: all 0.5s ease;
+	width: 138px;
+}
+.pre-footer .banner>p>strong{
+	font-size: 130%;
+}
+.pre-footer .banner>img{
+	width: 100px;
+	margin-bottom: 20px;
+}
+/*banner animation*/
+.pre-footer .banner:hover{
+	text-decoration: none;
+	transform: translateY(-125px);
+	transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.pre-footer .no-banners{
+	display: none;
+}
+/*BANNER RESPONSIVE LAYOUT*/
+@media screen and (max-width: 564px){
+	.pre-footer .banner{
+		width: 30%;
+		top:-25px;
+		padding: 10px 3px 3px 3px;
+	}
+	.pre-footer .banner>img{
+		width: 80%;
+		margin-bottom: 5px;
+	}
+	.pre-footer .banners a:nth-child(1){
+		left: 0%!important;
+	}
+	.pre-footer .banners a:nth-child(2){
+		left: 35%!important;
+	}
+	.pre-footer .banners a:nth-child(3){
+		left: 70%!important;
+	}
+	/*.pre-footer .banners{
+		display: none;
+	}
+	.pre-footer .no-banners{
+		display: inline;
+	}*/
+	.ajax-loader{
+		display: none;
+	}
+	.input-margin input{
+		margin: auto 5px;
+	}
+}
+
+.main-footer{
+	background-color: #404040;
+	background-image: url("images/backgrounds/striped_grayscale_bg_2.svg");
+	background-size: 45%;
+	box-shadow: 0 0 5px 3px rgba(50,50,50,0.2);
+	color: white;
+	min-height: 450px;
+	padding: 50px 0 30px 0;
+	position: relative;
+	text-align: center;
+}
+.main-footer .footer-column{
+	border-right: 1px solid rgba(200,200,200,0.8);
+	min-height: 350px;
+}
+.main-footer .footer-column:last-child{
+	border-right: none;
+}
+.main-footer .footer-column h3{
+	margin-bottom: 40px;
+}
+
+/*Remove vertical line below window width of 991px*/
+@media screen and (max-width:991px) {
+	.main-footer .footer-column:first-child{
+		border-right: none;
+	}
+}
+/*Remove all vertical lines below window width of 767px*/
+@media screen and (max-width:767px) {
+	.main-footer .footer-column{
+		border-right: none;
+	}
+}
+.main-footer :not(h3){
+	font-size: 100%;
+}
+.main-footer form{
+	color: rgb(50,50,50);
+}
+
+.main-footer form :not(input),.main-footer form :not(textarea){
+	color: white;
+}
+.main-footer form a:not(input),.main-footer form a:not(textarea){
+	color: rgb(50,255,50);
+}
+.main-footer form input,.main-footer form textarea{
+	border: medium none;
+	border-radius: 4px;
+	box-shadow: 0 0 2px rgba(50,50,50,0.75) inset;
+	padding: 3px 6px;
+	resize: vertical;
+	width: 300px;
+	color: rgb(80,80,80);
+} 
+
+.main-footer form input[type="submit"], .main-footer form input[type="reset"]{
+	width: 150px;
+}
+.main-footer form input[type="checkbox"].wpcf7-acceptance{
+	width: auto;
+	margin-right: 10px!important;
+}
+.main-footer form input[type="submit"], .main-footer form input[type="reset"]{
+	background-color: #6BAC4F;
+	box-shadow:  0 0 2px rgba(50,50,50,0.75);
+	color: white;
+	font-weight: 500;
+	margin-top: 2px;
+	padding: 5px;
+	transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.main-footer form input[type="reset"]{
+	background-color: rgb(200,120,80);
+}
+.main-footer form input[type="submit"]:hover, .main-footer form input[type="reset"]:hover{
+	box-shadow: 0 0 10px 2px rgba(50,50,50,0.7);
+	cursor: pointer;
+	/*margin-top: 0;
+	padding: 7px;
+	width: 205px;*/
+}
+.main-footer form .spacer{
+	height: 20px;
+}
+.main-footer table{
+	color: white;
+	margin: auto;
+}
+.main-footer table tbody tr{
+	height: 40px;
+}
+
+/*Schnellkontakt RESPONSIVE LAYOUT Mobile M Size Portrait*/
+@media screen and (max-width: 375px){
+	.main-footer .container{
+		padding: 0;
+	}
+	.main-footer form input,.main-footer form textarea{
+		width: 100%;
+	} 
+		.main-footer form input[type="submit"], .main-footer form input[type="reset"]{
+		width: 50%;
+	}
+	.rc-anchor{
+		width: 100%;
+	}
+
+}
+
+.post-footer{
+	background-color: #292929;
+	color:gray;
+	font-size: 80%;
+	height: 108px;
+	padding: 30px;
+	position: relative;
+	text-align: center;
+}
+.post-footer a{
+	color: gray;
+	text-decoration: none;
+	transition: color 0.2s ease;
+}
+.post-footer a:hover{
+	color: white;
+	text-decoration: none;
+}

@@ -1,0 +1,28 @@
+Register Time (Server): 29.04.2016 15:51:06
+-------------------------------------------
+exam_data:
+>>>
+    name: CTAL-TM Deutsch
+
+    requirements: true
+
+    super: Certified Tester Advanced Level - Testmanager
+
+    date1: 30. 04. 2016
+
+    time1: 15:00
+
+<<<
+
+exam_type: private
+
+customer:
+>>>
+    gender: female
+
+<<<
+
+zip: true
+
+admin_email: dominik.scheffler@me.com
+

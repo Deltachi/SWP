@@ -1,0 +1,456 @@
+/*Theme Name: SANITT Official Theme
+Theme URI: http://sanitt.de
+Description: A Theme made for Sanitt Information Technology Trainings, containing its green theme, animations, templating and data handling
+Version: 1.0
+Author: Dominik Scheffler
+Author URI: http://deltachi.de
+Tags: sanitt
+*/
+
+/*@import url('assets/bootstrap/css/bootstrap.min.css'); */
+@import url('css/soliloquy-custom.css'); 
+@import url('css/team.css'); 
+@import url('css/navbar.css'); 
+@import url('css/footer.css'); 
+
+/*Assign new fonts*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600,700,800,600italic,400italic);
+
+html, body{
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 400;
+    width: 100%;
+    overflow-x:hidden;
+}
+p, h1, h2, h3, h4, button{
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 400;
+}
+h1, h2, h3, h4{
+    line-height: 1.2 !important;
+    margin-top: 0px !important;
+}
+h2{
+    font-weight: 300 !important;
+}
+h3{
+    font-weight: 300 !important;
+}
+strong{
+    font-weight: 700;
+}
+h1 strong, h2 strong, h3 strong{
+    font-weight: 600;
+}
+hr{
+    border-color: #DDDDDD;
+}
+code{
+    padding: 0!important;
+    background: transparent!important;
+}
+ul {
+    list-style: square url("/images/icons/list_style_box.svg");
+} 
+.article:not(.welcome){
+    padding: 40px 0;
+}
+/*.article:not(.welcome):nth-child(1){
+    padding-top: 60px;
+}*/
+.article.no-padding{
+    padding: 0;
+}
+.article.gray{
+    background-color: #F2F2F2;
+    box-shadow: 0 0 5px rgba(80,80,80,0.3);
+}
+.article.green{
+    color: white;
+    background-color: #1E8540;
+    box-shadow: 0 0 5px rgba(80,80,80,0.3) inset;
+    font-weight: 500;
+}
+.article.inset{
+    box-shadow: inset 0 0 5px rgba(80,80,80,0.2);
+}
+/*Welcome section (light gray with drop shadow) with text (plus image)*/
+.welcome{
+    background-color: #F2F2F2;
+    box-shadow: 0 0 8px rgba(80,80,80,0.2);
+    padding: 40px 0px;
+    position: relative;
+}
+.welcome img.header-img{
+    /*box-shadow: -4px 4px 8px 2px rgba(50,50,50,0.2);*/
+    margin-top: 30px!important;
+    max-height: 335px!important;
+    max-width: 100%!important;
+}
+/*.welcome .thumbnail img{
+    margin-top: 0px!important;
+    max-height: 100%!important;
+    max-width: 100%!important;
+    width: auto!important;
+}*/
+.centered{
+    text-align: center;
+}
+.left-align{
+    text-align: left;
+}
+.noselect, .item {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.noscroll{
+    overflow: hidden;
+}
+
+.padding-after{
+    padding-bottom: 50px;
+}
+.padding-before{
+    padding-top: 50px;
+}
+.no-padding-below{
+    padding-bottom: 0;
+}
+.no-margin-below, .no-margin-below .panel-grid-cell{
+    margin-bottom: 0!important;
+}
+.pointer:hover{
+    cursor: pointer;
+}
+
+
+.panel-grid{
+    margin-bottom: 0!important;
+}
+
+
+
+.full-width.svg{
+    width: 100%;
+}
+.full-width.svg svg{
+    width: 80%;
+    margin: auto 10%;
+    height: auto;
+}
+
+.contact form{
+    color: rgb(50,50,50);
+}
+.contact form .caption{
+    width: 15%;
+}
+.contact form input:not([type="checkbox"]),.contact form textarea{
+    border: medium none;
+    border-radius: 4px;
+    box-shadow: 0 0 1px rgba(50,50,50,0.75) inset;
+    padding: 3px 6px;
+    resize: vertical;
+    width: 100%;
+} 
+.contact form input[type="reset"]{
+    background-color: #E07251;
+    box-shadow:  0 0 0 rgba(50,50,50,0);
+    color: white;
+    font-weight: 500;
+    margin-top: 4px;
+    margin-bottom: 2px;
+    padding: 5px;
+    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    max-width: 150px;
+}
+.contact form input[type="submit"]{
+    background-color: #6BAC4F;
+    box-shadow:  0 0 0 rgba(50,50,50,0);
+    color: white;
+    font-weight: 500;
+    margin-top: 4px;
+    margin-bottom: 2px;
+    padding: 5px;
+    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    max-width: 150px;
+}
+.contact form input[type="submit"]:hover, .contact form input[type="reset"]:hover{
+    /*margin-top: 2px;*/
+    /*margin-bottom: 4px;*/
+    box-shadow: 2px 2px 4px rgba(50,50,50,0.3);
+    padding: 5px 7px;
+    cursor: pointer;
+}
+form .spacer{
+    height: 20px;
+}
+
+/*.lehrplaene thead th.column-1{
+    width: 50% !important;
+}
+.lehrplaene thead th.column-2{
+    width: 25% !important;
+}
+.lehrplaene thead th.column-3{
+    width: 25% !important;
+}*/
+
+.table-default table{
+    width: 100%;
+    margin-bottom: 50px;
+}
+.table-default table th{
+    width: 25%;
+    background-color: transparent;
+    border-bottom: 1px solid rgb(150,150,150);
+    font-size: 13pt!important;
+    padding: 20px 30px;
+}
+.table-default table th:first-child{
+    width: 50%;
+}
+.table-default table td{
+    padding: 20px 30px !important;
+}
+.table-default table tr:not(.row-1)>td{
+    padding:0;
+}
+.table-default table tr:not(.row-1)>td>a{
+    height: 100%;
+    padding: 20px 30px;
+    transition: all 0.2s ease;
+}
+.table-default.lehrplaene table tr:not(.row-1)>td>a{
+    background-image: url("images/icons/Adobe_PDF_file_icon_32x32.png");
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    height: 100%;
+    padding: 20px 30px;
+    padding-left: 50px;
+    transition: all 0.2s ease;
+}
+.table-default table tr:not(.row-1)>td>a:hover{
+    background-color: rgb(234,234,234);
+    cursor: pointer;
+    text-decoration: none;
+}
+/*Plugin Tablepress Custom Highlighter Color*/
+.tablepress .sorting:hover, .tablepress .sorting_asc, .tablepress .sorting_desc {
+    background-color: #61c866;
+}
+
+/*RESPONSIVE TABLE LAYOUT (only show first column is on mobile)*/
+@media screen and (max-width: 758px){
+    .table-default table td:not(.column-1), .table-default table th:not(.column-1){
+        display: none;
+    }
+    .table-default table tr:not(.row-1)>td>a{
+        padding: 0;
+    }
+}
+
+
+
+.information-panel{
+    border-radius: 2px;
+    border: 1px solid rgb(210,210,210);
+    border-top: 2px solid rgb(39, 159, 87);
+    box-shadow: 5px 5px 10px rgba(80,80,80,0.3);
+    padding: 30px;
+}
+.information-panel h2, .information-panel h3, .information-panel h4{
+    font-weight: 700;
+}
+.information-panel span{
+    color: gray;
+}
+
+
+/*IT-PRUEFUNGSZENTRUM STYLES*/
+.literaturdetails{
+    padding-top: 50px;
+}
+
+.module-container{
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.module-card{
+    background-color: #AAAAAA;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(20,20,20,0.5);
+    padding: 5px;
+}
+.module-card table{
+    text-align: center;
+    vertical-align: center;
+    width: 100%;
+}
+.module-card th, .module-card td{
+    padding: 20px;
+    width: 100%;
+}
+.module-card.combined th, .module-card.combined td{
+    padding: 20px;
+    width: 50%;
+}
+.module-card th{
+    background-color: #5B5B5B;
+    border-radius: 5px 5px 0 0;
+    color: white;
+    text-align: center;
+    vertical-align: center;
+    height: 84px;
+    font-size: 13pt;
+}
+.module-card.combined th:first-child{
+    border-radius: 5px 0px 0 0;
+    border-right: 1px solid #AAAAAA;
+}
+.module-card.combined th:last-child{
+    border-radius: 0px 5px 0 0;
+}
+.module-card td{
+    background-color: #EEEEEE;
+}
+.module-card tr:nth-child(odd) td{
+    background-color: #DBDBDB;
+}
+.module-card tr:nth-child(odd) hr{
+    border-color: white;
+}
+.module-card   strong{
+    font-weight: 700;
+}
+.module-card  .font-small{
+    font-size: 11pt;
+}
+.module-card  .font-xs{
+    font-size: 9pt;
+}
+.module-card tr:last-child>td{
+    border-radius: 0 0 5px 5px;
+}
+.module-card.combined tr:last-child>td:first-child{
+    border-radius: 0 0 0px 5px;
+}
+.module-card.combined tr:last-child>td:last-child{
+    border-radius: 0 0 5px 0px;
+}
+.module-card.combined tr>td:first-child{
+    border-right: 1px solid #AAAAAA;
+}
+.module-card button{
+    background-color: #248749;
+    padding: 10px;
+    color: white;
+    margin: 5px;
+    border: 1px solid #21723D;
+    border-radius: 8px;
+    font-size: 10pt;
+    font-weight: 800;
+}
+
+.module.collapseable{
+    padding: 0px !important;
+}
+.module.collapseable div{
+    max-height: 700px;
+    overflow: hidden;
+    padding: 20px;
+    position: relative;
+    transition: all 1s ease;
+    width: 100%;
+}
+.module.collapseable.collapsed div{
+    max-height: 0px;
+    padding: 0 20px;
+}
+.module-container .collapse-btn{
+    background: transparent no-repeat center;
+    background-image: url('css/images/icons/chevron_down.svg');
+    background-size: 16px;
+    padding-right: 22px;
+    background-position: center right;
+    color: rgb(200,200,200);
+    border:none;
+    box-shadow: none;
+}
+
+/*.dropdown-chevron{
+    background: transparent no-repeat center;
+    background-image: url('css/images/icons/chevron_down_black.svg');
+    background-size: 16px;
+    padding-right: 22px;
+    background-position: center right;
+}*/
+
+.caution-container .caution{
+    /*border: 1px solid #F9F9F9;*/
+    background-color: #F2F2F2;
+    border-left: 4px solid #248749;
+    box-shadow: 1px 1px 3px rgba(50,50,50,0.3);
+    margin: 30px auto;
+    min-height: 100px;
+    padding: 30px 35px;
+}
+.gray .caution-container .caution{
+    background-color: #FFFFFF;
+}
+.caution-container .caution h3{
+    margin-top: 0;
+}
+.caution-container .caution button, .caution-container .caution a{
+    background-color: #248749;
+    border-radius: 5px;
+    border: 1px solid #248749;
+    color: white;
+    font-size: 10pt;
+    font-weight: 800;
+    margin-top: 10px;
+    padding: 5px 8px;
+}
+.caution-container .caution a:hover{
+    text-decoration: none;
+}
+.ui-timepicker-wrapper{
+    z-index: 100000!important;
+}
+
+.stellenangebot h1, .stellenangebot h2, .stellenangebot h3{
+    font-weight: 600!important;
+    color: rgb(66,149,91);
+}
+.stellenangebot h3{
+    font-weight: 600!important;
+    font-size: 16pt!important;
+}
+.stellenangebot table td{
+    padding: 10px 20px;
+}
+.g-recaptcha>div>div{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.footer .g-recaptcha>div>div{
+    margin: 30px auto;
+}
+.mapp-layout{
+    width: 100%!important;
+    border: none!important;
+    margin: 0!important;
+}
+
+.team-text-centered{
+    top: 30px;
+    position: relative;
+}
+.team-button-centered{
+    top: 45px;
+    position: relative;
+}

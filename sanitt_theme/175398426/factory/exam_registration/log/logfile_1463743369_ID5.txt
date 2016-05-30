@@ -1,0 +1,76 @@
+Register Time (Server): 20.05.2016 13:22:49
+-------------------------------------------
+exam_data:
+>>>
+    name: CAT Deutsch
+
+    requirements: true
+
+    super: Certified Agile Tester
+
+    date1: 25. Mai, 2016
+
+    time1: 10:30
+
+<<<
+
+exam_members:
+>>>
+    0:
+    >>>
+        gender: male
+
+        student: false
+
+        timebonus: false
+
+        $$hashKey: 014
+
+        firstname: Mad
+
+        lastname: Max
+
+        street:
+        >>>
+            name: Furyroad
+
+            number: 6a
+
+        <<<
+
+        city:
+        >>>
+            plz: 12345
+
+            name: Downtown
+
+        <<<
+
+        birthday: 1.6.66
+
+        birthplace: Downtown
+
+        phone: 0800666
+
+        email: mad.max@hotmail.com
+
+    <<<
+
+<<<
+
+exam_type: private
+
+customer:
+>>>
+    gender: female
+
+<<<
+
+zip: true
+
+admin_email:
+>>>
+    0: dominik.scheffler@me.com
+
+<<<
+

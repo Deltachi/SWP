@@ -1,0 +1,309 @@
+.header{
+	position: relative;
+	z-index: 1000;
+}
+.title{
+	background: -webkit-linear-gradient(#EDEDED, #D1D1D1);
+	background: -o-linear-gradient(#EDEDED, #D1D1D1);
+	background: -moz-linear-gradient(#EDEDED, #D1D1D1);
+	background: linear-gradient(#EDEDED, #D1D1D1);
+	height: 90px;
+	position: relative;
+	z-index: 9999;
+}
+.title-logo{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.title-logo svg, .title-logo img{
+	left: 50%;
+	max-height: 55px;
+	position: relative;
+	transform: translateX(-50%);
+}
+nav{
+	background: -webkit-linear-gradient(#60BF7E, #248749);
+	background: -o-linear-gradient(#60BF7E, #248749);
+	background: -moz-linear-gradient(#60BF7E, #248749);
+	background: linear-gradient(#60BF7E, #248749);
+	box-shadow: 0 0 10px rgba(50,50,50,0.4);
+	height: 50px;
+	z-index: 1000;
+}
+nav.fixed{
+	left: 0;
+	max-height: 100%;
+	overflow: visible;
+	position: fixed;
+	top:0;
+	width: 100%;
+	z-index: 1000;
+}
+nav.hidden{
+	display: none;
+}
+nav ul{
+	display: inline-table;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+nav .navigation-bar>li{
+	border-left: 1px solid #248749;
+	border-right: 1px solid #8ECC99;
+	float: left;
+}
+nav .navigation-bar>li:last-child{
+	border-right: none;
+}
+nav#fixed-navigation .navigation-bar>li:nth-last-child(2){
+	border-right: none;
+}
+nav .navigation-bar>li:first-child{
+	border-left: none;
+}
+nav ul .item>a{
+	color: white;
+	display: block;
+	min-height: 50px;
+	padding: 15px 25px 10px 25px;
+}
+nav ul .search{
+	display: block;
+	height: 50px;
+	padding: 10px 0 0 20px;
+	margin: 0;
+}
+nav ul .item>a:hover{
+	background-color: rgba(36,135,73,0.75);
+	text-decoration: none;
+}
+nav ul .item.active-page>a{
+	background-color: #248749;
+	border-bottom: 2px solid #C9F7BF;
+	text-decoration: none;
+	height: 48px;
+}
+nav ul .item.active>a{
+	background-color: #248749;
+	text-decoration: none;
+}
+nav .item>a>img.glyphicon{
+	/*brightness macht das graue Bild weiß*/
+	-webkit-filter: brightness(6); 
+	filter: brightness(6);
+	position: relative;
+	top: -2px;
+	width: 10px;
+}
+/*##########
+	Submenu
+############*/
+nav ul ul{
+	display: none;
+}
+@media screen and (min-width: 768px){
+	nav:not(.mobile) ul li:hover > ul{
+		display: block;
+	}
+}
+nav ul li.toggleable>a:hover{
+	cursor: pointer;
+}
+nav ul li.active > ul{
+	display: block;
+}
+nav ul ul {
+	background: rgba(95,105,117,0.95); border-radius: 0px; padding: 0;
+	position: absolute; top: 100%;
+}
+nav ul ul li {
+	float: none; 
+	border-top: 1px solid #6b727c;
+	border-bottom: 1px solid #575f6a;
+	position: relative;
+}
+nav ul ul li a {
+	padding: 15px 40px;
+	color: #fff;
+}	
+nav ul ul ul {
+	position: absolute; 
+	left: 100%; 
+	top:-1px;
+}
+/*Suchleiste*/
+nav>.container>ul>li:last-child:not(#menu-hide){
+	width:300px;
+}
+nav ul>li>form{
+	display: inline;
+}
+nav ul>li>form>input[type="text"]{
+	-webkit-appearance: none; 
+    -moz-appearance: none;
+    background: rgb(73,120,90) none repeat scroll 0% 0%;
+	color: white;
+    border: 1px solid rgb(55, 90, 68);
+    border-right: none;
+	border-radius: 4px 0 0 4px;
+	float: left;
+	height:30px;
+	padding: 3px;
+	width: 85%;
+}
+nav ul>li>form>input[type="image"]{
+	-webkit-appearance: none; 
+    -moz-appearance: none;
+    background: rgb(73,120,90) none repeat scroll 0% 0%;
+	color: white;
+    border: 1px solid rgb(55, 90, 68);
+    border-left: none;
+	border-radius: 0 4px 4px 0;
+	float: left;
+	height:30px;
+	padding: 3px;
+	width: 15%;
+}
+/*##################################
+Responsive Navbar für mobile Geräte
+####################################*/
+fixed-navbar .hide-btn{
+	display: none;
+	float: left;
+	padding: 10px 0 5px 0;
+	text-align: center;
+	transition: all 0.2s ease;
+	width: 100%;
+}
+fixed-navbar .hide-btn>img{
+	-webkit-filter: brightness(6); 
+	filter: brightness(6);
+	transform: rotateZ(180deg);
+	transition: all 0.5s ease;
+	width: 20px;
+}
+fixed-navbar .hide-btn:hover{
+	background-color: #34BA65;
+	cursor: pointer;
+}
+nav{
+	position: relative;
+	transition: all 1s ease;
+}
+/*Verkleinere Breite der Buttons um Zeilenumsprung zu verhindern*/
+@media screen and (max-width:1199px){
+	nav>.container{
+		padding: 0 20px;
+		margin: 0;
+		width: 100%;
+	}
+	nav ul .item>a{
+		padding: 15px 15px 10px 15px;
+	}
+	/*Suchleiste*/
+	nav>.container>ul>li:last-child:not(#menu-hide){
+		width:250px;
+	}
+}
+/*Verkleinere Breite der Buttons um Zeilenumsprung zu verhindern*/
+@media screen and (max-width:1023px){
+	nav ul .search{
+		width: 120px;
+	}
+	nav ul>li>form>input[type="text"]{
+		width: 60%;
+	}
+	nav ul>li>form>input[type="image"]{
+		width: 40%;
+	}
+}
+/*Suchleiste ist zu breit*/
+@media screen and (max-width: 991px){
+	nav ul .item>a{
+		padding: 8px 10px 8px 10px;
+		min-height: 5px;
+	}
+	/*Suchleiste*/
+	nav>.container>ul>li:last-child:not(#menu-hide){
+		width:90px;
+	}
+	nav ul>li>form>input[type="text"]{
+		width: 60%;
+	}
+	nav ul>li>form>input[type="image"]{
+		width: 40%;
+	}
+}
+/*Mobile Navbar*/
+@media screen and (max-width : 767px), screen and (max-device-width : 767px){
+	.header{
+		margin-top: 32px;
+	}
+	nav{
+		min-height: 50px;
+		height: auto;
+	}
+	nav .container{
+		padding: 0;
+	}
+	/*Make dropdown links appear inline*/
+	nav ul ul {
+		position: static;
+		display: none;
+	}
+	/*Untermenüs unten und nach rechts versetzt anzeigen*/
+	nav ul ul li{
+		padding-left: 25px;
+	}
+	nav ul ul ul {
+		position: static; 
+		left: auto; 
+		top: auto;
+	}
+	nav ul ul ul li{
+		padding-left: 25px;		
+	}
+	/*Create vertical spacing*/
+	nav li {
+		margin-bottom: 1px;
+	}
+	/*Make all menu links full width*/
+	nav ul li, nav li a {
+		width: 100%;
+	}
+	/*Suchleiste halb Bildschirmfüllend (breite)*/
+	nav ul>li>form>input[type="text"]{
+		width: 50%;
+	}
+	fixed-navbar .hide-btn{
+		display: inline;
+	}
+	#main-navigation{
+		display: none !important;
+	}
+	#fixed-navigation{
+		display: inline !important;
+	}
+	nav.fixed{
+		overflow-y: auto;
+	}
+	nav#fixed-navigation.fade-out{
+		transform: translateY(-100%);
+	}
+	nav#fixed-navigation.fade-out .hide-btn>img{
+		transform: rotateZ(0deg);
+	}
+}
+
+#menu-hide-seperate{
+	width: 100%;
+	position: fixed;
+	top:0;
+	background-color: rgb(49,149,67);
+	z-index: 10000;
+}
+#menu-hide-seperate img{
+	transform: rotateZ(0deg);
+}

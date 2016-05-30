@@ -1,0 +1,22 @@
+Register Time (Server): 29.04.2016 16:24:09
+-------------------------------------------
+course_data:
+>>>
+    topic: Adobe
+
+    name: Adobe Effects
+
+    date1: 16. 05. 2016
+
+    date2: 28. 05. 2016
+
+<<<
+
+course_type: private
+
+alternative_billing: false
+
+zip: true
+
+admin_email: dominik.scheffler@me.com
+
